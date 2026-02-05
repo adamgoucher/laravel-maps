@@ -1,5 +1,7 @@
 <?php namespace GeneaLabs\LaravelMaps;
 
+use Illuminate\Support\Facades\Vite;
+
 class Map
 {
 
@@ -1193,7 +1195,7 @@ class Map
         }
         if ($this->jsfile == "") {
             $this->output_js .= '
-			<script type="text/javascript">
+			<script type="text/javascript" nonce="'.Vite::cspNonce().'">
 			//<![CDATA[
 			';
         }
