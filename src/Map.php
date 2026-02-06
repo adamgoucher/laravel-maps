@@ -2262,7 +2262,7 @@ class Map
         }
         //
 
-        $this->output_html .= '<div id="'.$this->map_div_id.'" '.(($this->class != "") ? ' class="'.$this->class.'"' : '').'></div>';
+        $this->output_html .= '<div id="'.$this->map_div_id.'" style="width:'.$this->map_width.'; height:'.$this->map_height.';"'.(($this->class != "") ? ' class="'.$this->class.'"' : '').'></div>';
 
         ++$this->maps_loaded;
 
